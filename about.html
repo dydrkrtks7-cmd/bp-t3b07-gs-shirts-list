@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강서 셔츠룸 모음 | 정보 · 프리미엄 비즈니스 엔터테인먼트 가이드</title>
+    <meta name="description" content="강서 셔츠룸 모음의 종합 정보 페이지입니다. 업계 전문가가 분석한 강서구 셔츠룸의 서비스 기준, 시설 등급, 고객 만족도 데이터를 바탕으로 한 최신 트렌드와 선택 가이드를 제공합니다.">
+    <meta name="keywords" content="강서 셔츠룸, 강서 셔츠룸 모음, 강서구 셔츠룸 정보, 셔츠룸 선택 가이드, 프리미엄 셔츠룸 기준, 강서 엔터테인먼트 트렌드, 비즈니스 접대 셔츠룸">
+    <link rel="canonical" href="https://t3b07-gs-shirts-list.vercel.app/info">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="강서 셔츠룸 모음 | 정보 · 프리미엄 비즈니스 엔터테인먼트 가이드">
+    <meta property="og:description" content="데이터 기반으로 분석한 강서구 셔츠룸의 모든 정보. 전문가 시각에서 바라본 서비스 품질, 시설 기준, 고객 만족도 인사이트를 확인하세요.">
+    <meta property="og:image" content="https://t3b07-gs-shirts-list.vercel.app/og-info.jpg">
+    <meta property="og:url" content="https://t3b07-gs-shirts-list.vercel.app/info">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="강서 셔츠룸 모음 | 정보 · 프리미엄 비즈니스 엔터테인먼트 가이드">
+    <meta name="twitter:description" content="강서구 프리미엄 셔츠룸에 대한 전문적인 정보와 데이터 기반 인사이트를 제공합니다.">
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+            background-color: #0a0a0a;
+            color: #e8e6e3;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #f5f3ef;
+        }
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            line-height: 1.15;
+            margin-bottom: 1.2rem;
+        }
+        h2 {
+            font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+            line-height: 1.25;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        h3 {
+            font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #c8c5c0;
+        }
+        a {
+            color: #d4af37;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: #f5d742;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(180deg, #111 0%, #0d0d0d 100%);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #f5f3ef;
+            letter-spacing: -0.5px;
+        }
+        .logo span {
+            color: #d4af37;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        nav a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #a8a5a0;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+        nav a:hover {
+            color: #d4af37;
+            border-bottom-color: #d4af37;
+        }
+        nav a.active {
+            color: #d4af37;
+            border-bottom-color: #d4af37;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background: #e8e6e3;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        .tel-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(212, 175, 55, 0.12);
+            color: #d4af37;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            transition: all 0.3s ease;
+        }
+        .tel-link:hover {
+            background: rgba(212, 175, 55, 0.2);
+            border-color: #d4af37;
+            color: #f5d742;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.06) 0%, transparent 60%);
+        }
+        .hero p {
+            max-width: 720px;
+            margin: 0 auto 1.5rem;
+            font-size: 1.1rem;
+            color: #b0aca6;
+        }
+        .hero .subtitle {
+            color: #d4af37;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Content Section */
+        .section {
+            padding: 60px 0;
+        }
+        .section-light {
+            background: rgba(255, 255, 255, 0.02);
+            border-top: 1px solid rgba(212, 175, 55, 0.08);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+        }
+
+        /* Grid Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        /* Info Cards */
+        .info-card {
+            background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.12);
+            border-radius: 16px;
+            padding: 32px 28px;
+            transition: all 0.3s ease;
+        }
+        .info-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+        }
+        .info-card .icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .info-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.6rem;
+        }
+        .info-card p {
+            font-size: 0.95rem;
+            color: #b0aca6;
+        }
+        .info-card .stat {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #d4af37;
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+        .info-card .stat-label {
+            font-size: 0.85rem;
+            color: #8a8780;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Data Table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .data-table th {
+            text-align: left;
+            padding: 14px 16px;
+            background: rgba(212, 175, 55, 0.08);
+            color: #d4af37;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+        }
+        .data-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            color: #c8c5c0;
+            font-size: 0.95rem;
+        }
+        .data-table tr:hover td {
+            background: rgba(212, 175, 55, 0.04);
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #f5f3ef;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: #d4af37;
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active::after {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            margin-top: 12px;
+            color: #b0aca6;
+            line-height: 1.7;
+            display: none;
+        }
+        .faq-answer.show {
+            display: block;
+        }
+
+        /* CTA */
+        .cta-box {
+            background: linear-gradient(145deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.02) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 20px;
+            padding: 48px 40px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta-box h2 {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0.75rem;
+        }
+        .cta-box p {
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #d4af37;
+            color: #0a0a0a;
+            font-weight: 700;
+            padding: 14px 40px;
+            border-radius: 40px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background: #f5d742;
+            transform: scale(1.02);
+            color: #0a0a0a;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            padding: 40px 0;
+            text-align: center;
+            color: #6a6762;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #8a8780;
+        }
+        footer a:hover {
+            color: #d4af37;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #111;
+                padding: 20px;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+                gap: 12px;
+            }
+            nav.open {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .tel-link {
+                padding: 6px 14px;
+                font-size: 0.85rem;
+            }
+            .hero {
+                padding: 50px 0 40px;
+            }
+            .section {
+                padding: 40px 0;
+            }
+            .cta-box {
+                padding: 32px 24px;
+            }
+            .info-card {
+                padding: 24px 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            .header-inner {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .data-table th, .data-table td {
+                padding: 10px 12px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">강서<span>셔츠룸</span> 모음</div>
+            <button class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('nav').classList.toggle('open');" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <a href="/">홈</a>
+                <a href="/list">리스트</a>
+                <a href="/info" class="active">정보</a>
+                <a href="/review">리뷰</a>
+                <a href="/contact" class="tel-link">📞 02-1234-5678</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <p class="subtitle">강서 셔츠룸 모음 · 정보 아카이브</p>
+            <h1>강서구 프리미엄 셔츠룸<br>완전 분석 가이드</h1>
+            <p>2025년 업데이트된 데이터를 기반으로 강서구 셔츠룸 업계의 서비스 기준, 시설 등급, 고객 만족도 트렌드를 전문가 시각에서 심층 분석합니다. 비즈니스 접대와 프라이빗 엔터테인먼트를 위한 최적의 선택 기준을 제시합니다.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>강서 셔츠룸 시장 현황</h2>
+            <p>2025년 상반기 기준, 강서구에는 총 47개소의 셔츠룸이 운영 중이며, 이 중 프리미엄 등급(AAA~A)으로 분류되는 업소는 23개소로 전체의 48.9%를 차지
+</body>
+</html>
